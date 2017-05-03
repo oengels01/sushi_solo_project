@@ -7,7 +7,7 @@
     "test": "nodemon server/app.js",
     "start": "node server/app.js"
   },
-  "author": "Scott Bromander, Kris Szafranski",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
@@ -43,5 +43,6 @@
   "bugs": {
     "url": "https://github.com/oengels01/angular_route_passport_1-6/issues"
   },
-  "homepage": "https://github.com/oengels01/angular_route_passport_1-6#readme"
+  "homepage": "https://github.com/oengels01/angular_route_passport_1-6#readme",
+  "devDependencies": {}
 }
