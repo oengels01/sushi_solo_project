@@ -8,7 +8,7 @@ var UserSchema = new Schema({
     username: {type: String, required: true, index: {unique: true}},
     password: {type: String, required: true},
     emailaddress: {type: String, required: true},
-    //favorites: {type: String},
+    //favorites: [],
 });
 // var UploadSchema = mongoose.Schema({
 //   name: String,
