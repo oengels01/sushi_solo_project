@@ -10,6 +10,13 @@ var UserSchema = new Schema({
     emailaddress: {type: String, required: true},
     //favorites: {type: String},
 });
+// var UploadSchema = mongoose.Schema({
+//   name: String,
+//   created: Date,
+//   file: Object
+// });
+//
+// module.exports = mongoose.model('Upload', UploadSchema);
 
 // Called before adding a new user to the DB. Encrypts password.
 UserSchema.pre('save', function(next) {

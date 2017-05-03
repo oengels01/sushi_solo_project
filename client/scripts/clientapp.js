@@ -1,5 +1,6 @@
-var myApp = angular.module('myApp', 'fileUpload', ['ngRoute'], ['ngFileUpload']);
+var myApp = angular.module('myApp', ['ngRoute']);
 
+// var myApp = angular.module('myApp', 'fileUpload', ['ngRoute'], ['ngFileUpload']);
 // var app = angular.module('fileUpload', ['ngFileUpload']);
 
 /// Routes ///
