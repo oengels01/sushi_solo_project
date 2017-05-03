@@ -17,7 +17,7 @@ function($scope, $http, $location, $routeParams, UserService) {
       //  type: "warning",
        showCancelButton: true,
        confirmButtonColor: "#592941",
-       confirmButtonText: "Delete It!",
+       confirmButtonText: "Delete!",
        closeOnConfirm: false
      },
      function(){
