@@ -3,6 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var path = require('path');
+var logger = require('morgan');
 
 var passport = require('./strategies/userStrategy');
 var session = require('express-session');
@@ -19,6 +20,7 @@ var recipe = require('./routes/recipe');
 // Body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(logger('dev'));
 
 // Serve back static files
 app.use(express.static('./server/public'));

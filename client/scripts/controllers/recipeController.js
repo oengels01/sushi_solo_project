@@ -1,4 +1,4 @@
-myApp.controller('RecipeController', ['$scope', '$http', '$location', 'UserService', function($scope, $http, $location, UserService) {
+myApp.controller('RecipeController', ['$scope', '$http', '$location', 'UserService', 'Upload', function($scope, $http, $location, UserService, Upload) {
 
 
 // http post

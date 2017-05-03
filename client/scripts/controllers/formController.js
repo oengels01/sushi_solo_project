@@ -1,4 +1,7 @@
-// var app = angular.module('fileUpload', ['ngFileUpload']);
+// app.controller('formController', ['$scope', function($scope){
+//   $scope.test = "Delete me";
+// }]);
+
 
 
 // app.controller('formController', ['$http', 'Upload', '$scope', function($http, Upload, $scope){
