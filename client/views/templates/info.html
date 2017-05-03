@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div ng-include="'views/partials/nav.html'"></div>
+  <div class="row">
+      <div class="col-md-12">
+  <div class="add_recipes">
+    <a href="#/recipe"  class="lead text-center"><em>Add Sushi Recipe</em></a>
+    <!-- <input class="btn btn-default" type="submit" name="submit" value="Add Sushi Recipes" /> -->
+  </div>
+  </div>
+  <br>
+  <br>
+  <div class="sushi_list">
+    <div class="row">
+    <div class="col-md-10">
+
+    <div ng-controller="InfoController">
+    <div ng-repeat="recipe in sushiList.recipes track by $index">
+      <!-- <div ng-show="sushiList.response.data" class="well"> -->
+      <!-- <a href="#/detail/{{recipe._id}}">Name:{{recipe.name}}</a> -->
+      <a href="#/detail/{{recipe._id}}" class="lead text-center"><em>{{recipe.name}}</em></a>
+      <br>
+
+
+      <!-- <p>Name: {{recipe.name}}</p> -->
+      <!-- <img src="{{recipe.url}}"> -->
+
+      <a href="http://placehold.it"><img src="http://placehold.it/200x200" class="lead picture-center"></a>
+    </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>

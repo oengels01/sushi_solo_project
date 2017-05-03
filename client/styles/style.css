@@ -1,0 +1,146 @@
+.instructions.container h1 {
+    font-size: 46px;
+    font-weight: 700;
+
+}
+
+.instructions {
+    background-color: #2FE6DE;
+    color: #89043D;
+    text-align: center;
+    font-size:300%;
+
+}
+
+#entryForm {
+    margin-top: 14px;
+}
+
+#container {
+    margin-top: 10px;
+
+
+}
+
+.container p{
+    margin-top : 14px;
+
+}
+
+.message {
+    padding: 10px 0;
+}
+
+.message p {
+    margin-left: 10px;
+
+}
+
+.message:nth-child(odd) {
+     background-color: #eeeeee;
+}
+
+.message:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.btn-danger{
+    margin-left: 10px;
+}
+
+.container {
+    line-height: 30px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    width: 780px;
+
+}
+.texarea{
+   width: 700px;
+
+}
+.sushi_list div {
+  position: inline;
+  margin: 20px;
+  float: left;
+  padding: 5px;
+  background-color: #C7FFED;
+  text-align: inherit;
+
+}
+.sushi_recipes {
+  float: left;
+
+}
+.add_recipes {
+  position:relative;
+  left:20%;
+  right:20%;
+  bottom:10%;
+  top:60%;
+  width: 200px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DCB6D5;
+  float: left;
+
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: #8FC2C1;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: #89043D;
+    text-align: center;
+    text-align: large;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #2FE6DE;
+}
+.form-group {
+  position:relative;
+  margin: 20px;
+  width: 40px;
+  float: center;
+}
+.sushi_detail{
+  position:relative;
+  text-align: left;
+  width: 40px;
+  font-size: 18px;
+  width: 600px;
+  margin: 30px;
+
+}
+#Recipe_Directions {
+  color: #2FE6DE;
+  width: 700px;
+  size: 8px;
+}
+.recipe_name{
+  position:relative;
+  text-align: left;
+  width: 40px;
+  font-size: 18px;
+  width: 400px;
+  margin: 30px;
+}
+#YourRecipe {
+  color: #2FE6DE;
+}

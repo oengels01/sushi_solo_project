@@ -1,0 +1,52 @@
+<div class="container">
+<div ng-include="'views/partials/nav.html'"></div>
+<div class="row">
+<div class="recipe_name">
+
+
+<h2 id="YourRecipe" >Add Recipe </h2>
+
+  <div ng-controller="RecipeController">
+ <label>Name<br>
+    <textarea ng-model="newRecipe.name"></textarea>
+     <label>Description<br>
+    <textarea ng-model="newRecipe.description"></textarea>
+     <label>Ingredients<br>
+    <textarea ng-model="newRecipe.ingredients"></textarea>
+  <br>
+    <button type="button" ng-click="postRecipe(newRecipe)">Save Recipe</button>
+
+    <button type="button" ng-click="postPicture(newPicture)">Add Picture</button>
+
+
+    <div ng-repeat="recipe in sushiList.recipes track by $index">
+      <p>{{recipe.name}}</p>
+      <p>{{recipe.description}}</p>
+      <p>{{recipe.ingredients}}</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+  <!-- <div class="nameRecipe">
+  <input type="text" placeholder="Name Recipe" name="name" id="name">
+</div>
+<br>
+  <textarea name="comment" form="usrform">Description</textarea>
+  <textarea name="comment" form="usrform">Ingredients</textarea>
+
+  <div class="sort-buttons">
+ <button class="rent-button btn-md">Edit</button>
+ <button class="sale-button btn-md" ng-click="">Save</button> -->
+
+</div>
+</div>
+</div>

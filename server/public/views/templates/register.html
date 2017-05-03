@@ -1,0 +1,23 @@
+<div class="container">
+  <h1 class="lead">Create a Profile</h1>
+  <h1 class="lead alert alert-danger" role="alert" ng-if="message != ''">{{message}}</h2>
+    <form ng-submit="registerUser()">
+      <div class="form-group">
+        <label for="username">UserName</label>
+        <input type="text" ng-model="user.username" />
+      </div>
+      <div class="form-group">
+        <label for="emailaddress">Email:</label>
+        <input type="text" ng-model="user.emailaddress" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" ng-model="user.password" />
+      </div>
+        <div class="form-group">
+          <input class="btn btn-default" type="submit" name="submit" value="Register" />
+          <a href="#home">CANCEL</a>
+        </div>
+        </form>
+
+      </div>

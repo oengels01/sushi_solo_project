@@ -1,0 +1,73 @@
+<div class="container">
+  <div ng-controller="DetailController">
+    <div ng-include="'views/partials/nav.html'"></div>
+    <div class="detail_recipe">
+
+      <h2 id="Recipe_Directions">Preparation Recipe</h2>
+      <!-- <div ng-show="recipeID.recipe" class="well"> -->
+
+      <div ng-repeat="recipe in recipeID.recipe" class="sushi_detail">
+        <p><strong>Name: </strong>{{recipe.name}}</p>
+        <p><strong>Description:</strong> {{recipe.description}}</p>
+        <p><strong>Ingredients:</strong> {{recipe.ingredients}}</p>
+        <br>
+<!-- <textarea name="comment" form="usrform">Description</textarea> -->
+<!-- <textarea name="comment" form="usrform"</textarea> -->
+        <div class="texarea">
+        <textarea ng-show="editMode" ng-model="recipe.name"></textarea>
+        <textarea ng-show="editMode" ng-model="recipe.description"></textarea>
+        <textarea ng-show="editMode" ng-model="recipe.ingredients"></textarea>
+      </div>
+        <br>
+
+        <button class="btn btn-success" ng-show="editMode" ng-click="saveRecipe(recipe); editMode=false">Save Recipe</button>
+
+        <button type="button" class="btn btn-default" aria-label="Pensil">
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true" ng-click="editMode=true"></span>
+          <!-- on save, saveRecipe(recipe) & set edit mode to false -->
+          <!-- <button class="btn btn-success" ng-show="editMode" ng-click="saveRecipe(recipe); editMode=false">Save Recipe</button> -->
+          <button type="button" class="btn btn-default" aria-label="Remove">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="removeRecipeID(recipe._id)"></span>
+          </button>
+
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Heart">
+          <span class="glyphicon glyphicon-heart" aria-hidden="true" ng-click="addToFavorites(recipe)"></span>
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Share-alt">
+          <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+        </button>
+
+        <!-- <button type="button" class="btn btn-default" aria-label="Like">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-default" aria-label="Unlike">
+          <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        </button> -->
+
+
+        <!-- <textarea name="comment" form="usrform">Description</textarea> -->
+        <!-- <textarea name="comment" form="usrform"</textarea> -->
+
+        <!-- <p>{{recipe.name}}</p>
+        <p>{{recipe.description}}</p>
+        <p>{{recipe.ingredients}}</p> -->
+
+
+
+        <!-- <p>{{recipeID.response.data}}</p> -->
+
+        <!-- <div ng-show="recipeID.response.data" class="well">
+        <p>{{recipeID}}</p> -->
+
+        <!-- <button class="btn btn-success" ng-show="recipeID.response.data" ng-click="deleteRecipe()">Delete Recipe</button>
+
+        <p>{{recipe.name}}</p>
+        <p>{{recipe.description}}</p>
+        <p>{{recipe.ingredients}}</p> -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
