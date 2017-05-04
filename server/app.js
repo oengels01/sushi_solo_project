@@ -13,6 +13,7 @@ var index = require('./routes/index');
 var user = require('./routes/user');
 var register = require('./routes/register');
 var recipe = require('./routes/recipe');
+var uploads = require('./routes/uploads');
 
 
 
@@ -41,9 +42,11 @@ app.use(passport.session());
 // Routes
 app.use('/register', register);
 app.use('/user', user);
+app.use('/uploads', uploads);
 // app.use('/info', info);
 
 app.use('/recipe', recipe);
+
 
 // app.use('/favorite', favorite);
 // app.use('/friends', friends);

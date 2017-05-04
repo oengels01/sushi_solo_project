@@ -64,6 +64,15 @@ myApp.config(['$routeProvider', '$locationProvider',
       }
     })
 
+    // .when('/uploads', {
+    //   templateUrl: '/views/templates/recipe.html',
+    //   controller: 'RecipeController',
+    //   resolve: {
+    //     getuser : ['UserService', function(UserService){
+    //       return UserService.getuser();
+    //     }]
+    //   }
+    // })
 
     // .when('/favorite', {
     //   templateUrl: '/views/templates/detail.html',

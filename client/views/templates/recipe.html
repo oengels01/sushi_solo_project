@@ -7,16 +7,16 @@
 <h2 id="YourRecipe" >Add Recipe </h2>
 
   <div ng-controller="RecipeController">
- <label>Name<br>
+ <!-- <label>Name<br>
     <textarea ng-model="newRecipe.name"></textarea>
      <label>Description<br>
     <textarea ng-model="newRecipe.description"></textarea>
      <label>Ingredients<br>
     <textarea ng-model="newRecipe.ingredients"></textarea>
-  <br>
-    <button type="button" ng-click="postRecipe(newRecipe)">Save Recipe</button>
+  <br> -->
+    <!-- <button type="button" ng-click="postRecipe(newRecipe)">Save Recipe</button> -->
 
-    <button type="button" ng-click="postPicture(newPicture)">Add Picture</button>
+    <!-- <button type="button" ng-click="postPicture(newPicture)">Add Picture</button> -->
 
 
     <div ng-repeat="recipe in sushiList.recipes track by $index">
@@ -24,15 +24,29 @@
       <p>{{recipe.description}}</p>
       <p>{{recipe.ingredients}}</p>
     </div>
+    <br>
+
     <form ng-submit="submit()">
+
       <legend>Upload a new file here:</legend>
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" ng-model="upload.name" required/>
+      <label>Name<br>
+        <textarea ng-model="upload.name"></textarea>
+         <label>Description<br>
+        <textarea ng-model="upload.description"></textarea>
+         <label>Ingredients<br>
+        <textarea ng-model="upload.ingredients"></textarea>
       <br/>
       <label for="file">File:</label>
       <input type="file" name="file" id="file" ng-model="upload.file" ngf-select ngf-max-size="25MB" required/>
       <br/>
       <input type="submit" value="Submit"/>
+      <h2>All uploads are here:</h2>
+<ul>
+  <li ng-repeat="upload in uploads">
+    <p>{{upload.name}}</p>
+    <a ng-href='{{upload.file.path + "/" + upload.file.originalname}}'>{{upload.file.originalname}}</a>
+  </li>
+</ul>
     </form>
   </div>
   </div>
